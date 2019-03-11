@@ -15,7 +15,7 @@ There is no need to resort to regular expressions in this case.
 This simple library lends itself as an hi-speed scanner/splitter and returns an array containing the substrings of the original
 string. Whether you would love to retain the splitting tokens in the scanner's output is totally up to you! 
 
-Simply set the ```IncludeTokensInOutput``` property of your ```GScanner``` to true to retain the splitting tokens.
+Simply set the ```includeTokensInOutput``` property of your ```GScanner``` to true to retain the splitting tokens.
 Else set it to false.
 
 The most sensible way of implementing this scan is to prioritize the splitter-tokens by sorting them by length in descending order.
@@ -57,7 +57,7 @@ The square braces and the commas are just for formatting.
 
 If you set 
 ```Javascript 
-IncludeTokensInOutput
+includeTokensInOutput
 ``` 
 to false by doing this:
 
