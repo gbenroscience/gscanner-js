@@ -35,7 +35,7 @@ A beautiful example usage would be for scanning an arithmetic expression or othe
 function example(){
     var sc = new Scanner("34+45+sin(33cos(8.24))/22^cosh(4-tan(2))+sinsinh(3)-sinh(sin(2))", true, 
     new Array("+","-","sin","sinh","cos","cosh","^","/","(",")")); 
-    print(sc.scan()); 
+    console.log(sc.scan()); 
 }
 ```
 	
@@ -65,7 +65,7 @@ to false by doing this:
 function example(){
     var sc = new Scanner("34+45+sin(33cos(8.24))/22^cosh(4-tan(2))+sinsinh(3)-sinh(sin(2))", false, 
     new Array("+","-","sin","sinh","cos","cosh","^","/","(",")")); 
-    print(sc.scan()); 
+    console.log(sc.scan()); 
 }
 ```
   
