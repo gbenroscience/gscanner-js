@@ -32,7 +32,7 @@ Scanner.prototype.scan = function () {
 
             var token = this.tokens[j];
             var len = token.length;
-            if (len > 0 && i + len <= inp.length()) {
+            if (len > 0 && i + len <= inp.length) {
                 var portion = inp.substring(i, i + len);
                 if (portion.equals(token)) {
                     if (i !== 0) {//avoid empty spaces
@@ -51,7 +51,7 @@ Scanner.prototype.scan = function () {
         }
 
     }
-    if (!inp.isEmpty()) {
+    if (inp.length > 0) {
           parse[parse.length] = inp;
     }
 
@@ -63,7 +63,7 @@ Scanner.prototype.scan = function () {
 function main(){
     var sc = new Scanner("34+45+sin(33cos(8.24))/22^cosh(4-tan(2))+sinsinh(3)-sinh(sin(2))", true, 
     new Array("+","-","sin","sinh","cos","cosh","^","/","(",")")); 
-    print(sc.scan());
+    console.log(sc.scan());
     return 1;
 }
 main();
