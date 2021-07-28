@@ -34,7 +34,7 @@ Scanner.prototype.scan = function () {
             var len = token.length;
             if (len > 0 && i + len <= inp.length) {
                 var portion = inp.substring(i, i + len);
-                if (portion.equals(token)) {
+                if (portion === token) {
                     if (i !== 0) {//avoid empty spaces
                         parse[parse.length] = inp.substring(0, i);
                     }
